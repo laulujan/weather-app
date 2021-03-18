@@ -5,36 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=z, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <script src="main.js" async></script>
     <title>The Weather</title>
   </head>
   <body>
     <div id="content">
       <div id="search-form">
-        <form id="city-search">
-          <input type="text" placeholder="City" name="city" id="city" />
-          <button id="search" type="submit"><i class="fas fa-search"></i></button>
-        </form>
+        <input type="text" placeholder="City" name="city" id="input-city" />
+        <button id="search-btn" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
       </div>
       <div id="card">
         <div id="title">
-          <div id="info-weather" >
+          <div id="info-weather">
             <span id="weather">weather main</span>
-            <div id="icon-weather"><img id="icon"></div>
+            <div id="icon-weather"><img id="icon" src="" /></div>
           </div>
-          <h1>City, Country</h1>
+          <h1 id="place">City, Country</h1>
         </div>
         <div id="result">
-          <div id="temp">
-          <span>35°</span>
+          <div>
+            <span id="temp">35°</span>
+          </div>
+          <div id="details">
+            <p id="feels-like">Feels like</p>
+            <p id="max-temp">Temp max</p>
+            <p id="min-temp">Tem min</p>
+          </div>
         </div>
-        <div id="details">
-          <p id="feels-like">Feels like</p>
-          <p id="max-temp">Temp max</p>
-          <p id="min-temp">Tem min</p>
-        </div>  
-        </div>
-        
       </div>
     </div>
   </body>

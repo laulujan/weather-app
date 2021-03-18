@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 html {
   background: url("https://bit.ly/3eLZmnP") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -5,6 +7,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #search-form{
@@ -18,6 +21,7 @@ html {
     background-color: rgba(248, 248, 245, 0.301);
     outline: none;
     padding: 0.2rem 0.3rem 0.2rem 0.6rem;
+    height: 1.5rem;
 }
 #search-form button {
     background-color: rgba(255, 255, 253, 0.356);
@@ -25,6 +29,7 @@ html {
     font-size: 1rem;
     border-radius: .5rem;
     padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    margin-right: 0.2rem;
 }
 #search-form button:hover {
     border: 1px solid white;
@@ -33,25 +38,33 @@ html {
 
 #card {
   width: 60%;
-  border-radius: 8px;
-  background-color: rgba(248, 247, 244, 0.192);
+  border-radius: 1.5rem;
+  background-color: rgba(248, 247, 244, 0.521);
   margin: auto;
-  margin-top: 6em;
+  margin-top: 6rem;
+  
+}
+#title {
+  padding: 1rem;
 }
 
 #info-weather {
   display: flex;
   justify-content: space-between;
+  font-size: 1.5rem;
 }
 
-#switch {
-  float: right;
-}
 #result {
   display: flex;
   justify-content: space-evenly;
 }
 
+#temp {
+  font-size: 4rem;
+}
+p {
+  margin: 0.2rem;
+}
 
 @media only screen and (max-width: 479px){
     #card { 
